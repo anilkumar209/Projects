@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    nav a:hover {
+      color: #ddd;
+    }
+
+    main {
+      padding: 50px;
+    }
+
+    .banner {
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .banner h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .banner button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .banner button:hover {
+      background-color: #222;
+    }
+
+    .about {
+      margin-top: 50px;
+    }
+
+    .about h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">ANIL KUMAR KATRU</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <button>Hello!</button>
+      <h2>I am a Computer Science Enthusiastic Student</h2>
+      <p>anilkumarkatru07@gmail.com | +91 9553871209 | LinkedIn- ANIL KUMAR KATRU</p>
+    </section>
+
+    <section class="about">
+      <h3>My Programming Skills</h3>
+      <p>C | C++ | Java | Python</p>
+
+      <h3>Tools & Technologies I Known</h3>
+      <p>Git | Linux | WINDOWS | MS OFFICE | HTML | CSS | DEVOPS | SQL</p>
+
+      <h3>Frameworks & Libraries I Known</h3>
+      <p>STL | NUMPY | PANDAS</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; My Simple Website</p>
+  </footer>
+</body>
+</html>
