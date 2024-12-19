@@ -1,124 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anil Kumar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #333;
-      color: #fff;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
 
-    .logo {
-      font-size: 2em;
-      font-weight: bold;
-    }
-    nav {
-      display: flex;
-      list-style: none;
-      padding: 0;
-    }
+        header {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
 
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #fff;
-    }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
 
-    nav a:hover {
-      color: #ddd;
-    }
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
 
-    main {
-      padding: 50px;
-    }
+        .cta-btn {
+            display: inline-block;
+            background-color: #e63946;
+            color: white;
+            font-size: 1.1rem;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-    .banner {
-      text-align: center;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+        .cta-btn:hover {
+            background-color: #d62828;
+        }
 
-    .banner h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
+        section {
+            padding: 60px 20px;
+            margin: 30px 0;
+        }
 
-    .banner button {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+        h2 {
+            font-size: 2.5rem;
+            color: #1d3557;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
 
-    .banner button:hover {
-      background-color: #222;
-    }
+        .education, .experience, .skills, .projects, .achievements {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
 
-    .about {
-      margin-top: 50px;
-    }
+        .education ul, .experience ul, .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    .about h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
+        .education li, .experience li, .skills li, .projects li {
+            margin: 10px 0;
+            padding-left: 15px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
 
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+        .education li {
+            font-weight: 500;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 30px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            color: #1d3557;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background-color: #e63946;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background-color: #d62828;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skills li {
+            background-color: #e0e0e0;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills li:hover {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1 class="logo">ANIL KUMAR KATRU</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="banner">
-      <button>Hello!</button>
-      <h2>I am a Computer Science Enthusiastic Student</h2>
-      <p>anilkumarkatru07@gmail.com | +91 9553871209 | LinkedIn- ANIL KUMAR KATRU</p>
+    <!-- Header Section -->
+    <header>
+        <h1>Anil Kumar Katru</h1>
+        <p>Computer Science Aspirant | Hustling Trainee</p>
+        <a href="https://www.linkedin.com/in/anil-kumar-katru-23547021b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="cta-btn">LinkedIn Profile</a>
+    </header>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+        <div class="container">
+            <ul>
+                <li><strong>Eluru College of Engineering and Technology</strong> <br>
+                    Bachelor of Technology in Computer Science Engineering <br>
+                    Duration: 2021 - 2025 | CGPA: 7.91 (Upto 6th semester)
+                </li>
+                <li><strong>Sri Chaitanya Educational Institutions</strong> <br>
+                    Intermediate in Maths, Physics, Chemistry <br>
+                    Duration: 2019 - 2021 | CGPA: 9.4
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section class="about">
-      <h3>My Programming Skills</h3>
-      <p>C | C++ | Java | Python</p>
-
-      <h3>Tools & Technologies I Known</h3>
-      <p>Git | Linux | WINDOWS | MS OFFICE | HTML | CSS | DEVOPS | SQL</p>
-
-      <h3>Frameworks & Libraries I Known</h3>
-      <p>STL | NUMPY | PANDAS</p>
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="container">
+            <ul>
+                <li><strong>Eduskills Foundations</strong> <br>
+                    AI-ML Virtual Internship | Sep 2023 - Nov 2023 <br>
+                    Learned and worked with AI & ML algorithms practically.
+                </li>
+                <li><strong>Eduskills Foundations</strong> <br>
+                    Data Science Master Virtual Internship | Jul 2024 - Sep 2024 <br>
+                    Learned and worked with data analytics and visualization.
+                </li>
+            </ul>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; My Simple Website</p>
-  </footer>
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="container">
+            <ul>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project-card">
+                <h3>Snake Game</h3>
+                <p><strong>Technologies Used:</strong> Python</p>
+                <p>Built a snake game using Python and its libraries to implement basic game mechanics.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2>Achievements</h2>
+        <div class="container">
+            <ul>
+                <li>Awarded as Class Admin for Excellence.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
